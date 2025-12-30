@@ -34,6 +34,14 @@ int main(){
     std::string name = "Dr. House";
     std::cout << "Hello there, " << name << std::endl;
 
+    // const (type qualifier, value can't be changed after initialization)
+    const double PI = 3.14159265359;
+    // PI = 22/7.0; error 
+
+    // volatile (type qualifier, Value can change unexpectedly)
+    // volatile tells the compiler that a variable’s value can change at any time, without the program changing it.
+    volatile int semaphore = 0;
+
 
 
 
