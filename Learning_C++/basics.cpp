@@ -42,6 +42,22 @@ int main(){
     // volatile tells the compiler that a variable’s value can change at any time, without the program changing it.
     volatile int semaphore = 0;
 
+    // taking user input
+    int your_age;
+    std::cout << "How old are you?: ";
+    std::cin >> your_age;
+    
+    std::string your_name;
+    std::cout << "What's your name?: ";
+    //std::cin >> your_name; // wont accept spaced words
+    std::getline(std::cin >> std::ws, your_name); // try it out removing the std::ws
+
+   
+
+    std::cout << "Hello, " << your_name << '\n';
+    std::cout << (your_age >= 18 ? "mature man" : "juvenile, come back when you're grown up") << '\n';
+
+
 
 
 
