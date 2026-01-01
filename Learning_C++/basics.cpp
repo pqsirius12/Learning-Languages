@@ -111,6 +111,9 @@ int main(){
     // Double quotes " " → string literal
     // Single quotes ' ' → character literal
 
+    // arithmetic operator : + - * / %
+    
+
 
 
 
