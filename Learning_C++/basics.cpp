@@ -121,6 +121,8 @@ int main(){
 
     // Logical operators && || !
 
+    // Loops : while do while for
+
 
 
 
