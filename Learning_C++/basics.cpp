@@ -92,6 +92,25 @@ int main(){
     cout << "y = " << y << '\n';
     cout << "y = " << first::y << '\n';
 
+    // typedef is used to create a new name (alias) for an existing data type, 
+        //making complex types easier to read and use.
+
+    // using is a modern alternative to typedef that also creates type aliases, 
+        //with clearer syntax and better support for templates.
+    
+    typedef int number;
+    using string = std::string;
+
+    number flower_petals = 5;
+    string flower_name = "Hibiscus";
+
+    cout << flower_name << "has " << flower_petals << "petals" << '\n';
+    cout << 'ab' << std::endl; 
+    // output: 249305b 'a' → 97 → 0x61  'b' → 98 → 0x62 'ab' → 0x6162 (hex) → 24930 (decimal)
+    // ('a' << 8) + 'b' 
+    // Double quotes " " → string literal
+    // Single quotes ' ' → character literal
+
 
 
 
