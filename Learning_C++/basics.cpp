@@ -117,6 +117,8 @@ int main(){
     // if else if else
     // switch case break default
 
+    // ternary operators
+
 
 
 
