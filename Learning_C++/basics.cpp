@@ -1,5 +1,18 @@
 #include <iostream>
 
+namespace first{
+    int x = 10;
+    int y = 100;
+
+    void show(){
+        std::cout << "Inside namespace 'first' " << '\n';
+    }
+}
+namespace second{
+    int x = 20;
+    int y = 200;
+}
+
 int main(){
     // Single Line comment
     /*
@@ -56,6 +69,32 @@ int main(){
 
     std::cout << "Hello, " << your_name << '\n';
     std::cout << (your_age >= 18 ? "mature man" : "juvenile, come back when you're grown up") << '\n';
+
+    // Namespace is a language feature used to group related identifiers 
+        //(such as variables, functions, and classes) under a named scope. 
+        //It helps organize code and prevent name conflicts, especially in large programs or 
+        //when multiple libraries define identifiers with the same names.
+    
+    
+    int x = 0;
+    std::cout << "x = " << x << '\n';
+    std::cout << "x = " << first::x << '\n';
+    std::cout << "x = " << second::x << '\n';
+
+    using namespace first;
+    show();
+    std::cout << "y = " << y << '\n';
+
+    //using second::x; error message conflicting with local x
+    using second::y;
+    using std::cout;
+
+    cout << "y = " << y << '\n';
+    cout << "y = " << first::y << '\n';
+
+
+
+
 
 
 
