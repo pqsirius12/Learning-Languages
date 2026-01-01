@@ -13,6 +13,8 @@ namespace second{
     int y = 200;
 }
 
+int myNum = 1000;
+
 int main(){
     // Single Line comment
     /*
@@ -124,6 +126,15 @@ int main(){
     // Loops : while do while for
 
     // break and continue
+
+    cout << myNum << '\n';
+
+    number myNum = 10;
+
+    cout << myNum << '\n'; // local variable
+
+    cout << ::myNum << '\n'; // global variable
+
 
 
 
