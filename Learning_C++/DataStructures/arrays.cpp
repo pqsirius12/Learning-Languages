@@ -1,10 +1,10 @@
 #include <iostream>
 
 using std::cout;
-using std::string;
+using str = std::string;
 
 int main(){
-    string x = "Hello, there \n";
+    str x = "Hello, there \n";
     cout << x;
     return 0;
 }
